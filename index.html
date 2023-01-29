@@ -1,0 +1,49 @@
+<html>
+    <head>
+       <title>My Selfie App</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link href="style.css" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
+
+</head>
+ 
+<body>
+    <div class="container">
+    <center>
+        <a href="" id="link" download="selfiee.jpg"></a>
+        <h1>Voice Selfie App 
+            <img id="logo" src="selfiee.jpg">
+        </h1>
+        <hr>
+        <h3 style="color:red;">Please press allow as soon as popup comes. After you give a voice command</h3>
+        
+        <div class="form-group">
+            <h3>Say "take my selfie"</h3>
+            <label>Your voice output : </label>
+            <textarea id="textbox" class="form-control" readonly="true"></textarea>
+        </div>
+
+        <p>Press the Start button</p>
+        <button id="start" class="btn btn-primary" onclick="start()"> START </button>
+        <br><br>
+        <label>Your webcam : </label>
+        <div id="camera"></div>
+        <br>
+
+        <label>Your selife Will Display Here: </label>
+        <div id="result_1">
+            <img src="atockphoto3.jpg">
+        </div>
+    </center>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
